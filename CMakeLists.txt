@@ -16,3 +16,8 @@ add_executable(CrossPlatformCPPTemplate ${SOURCES})
 
 # Install binaries
 install(TARGETS CrossPlatformCPPTemplate DESTINATION bin)
+
+# Additional custom targets below
+add_custom_target(debug
+  COMMAND ${CMAKE_COMMAND} --build . --config Debug
+)
