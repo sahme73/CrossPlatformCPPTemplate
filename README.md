@@ -1,14 +1,21 @@
 # CrossPlatformCPPTemplate
 a template for building platform/compiler independent cpp software
 
+BASH:
 `cmake -S . -B build -DCMAKE_INSTALL_PREFIX=.`
 
 `cmake --build build`
 
 `cmake --install build`
 
-DEBUG:
+POWERSHELL:
+`cmake -S . -B build -DCMAKE_INSTALL_PREFIX="${PWD}"`
 
-`cmake -S . -B build -DCMAKE_INSTALL_PREFIX=. -DCMAKE_BUILD_TYPE=DEBUG`
+`cmake --build build`
+
+`cmake --install build`
+
+DEBUG:
+add `-DCMAKE_BUILD_TYPE=DEBUG`
 
 `cmake --build build`
