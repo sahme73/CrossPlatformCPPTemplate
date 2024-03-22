@@ -7,5 +7,7 @@
 Base* createBase() {
     #if defined(PLATFORM_WINDOWS)
         return new WindowsDerived();
+    #else
+        return nullptr;
     #endif
 }
