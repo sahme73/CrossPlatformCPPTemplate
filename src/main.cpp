@@ -4,7 +4,7 @@ int main() {
     std::cout << "Test" << std::endl;
 
     Base* base = createBase();
-    base->operation();
+    if (base) base->operation();
     delete base;
 
     return 0;
